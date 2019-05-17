@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+ pre_build:
+  commands:
+   - echo "Inside pre_build"
+ build:
+  commands:
+   - echo "Inside Build"
+   - mvn clean package war:exploded
+ post_build:
+  commands:
+   - echo "Inside post_build"
+   - mv target/deploy ./	
+artifacts:
+ files:
+  - deploy/**/*
