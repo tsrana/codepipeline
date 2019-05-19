@@ -10,6 +10,6 @@ public class MyController {
 	
 	@GetMapping
 	public String rana() {
-		return "My Name Is TsRANA and it is my 1st codepipeline ... Now using Jenkins.";
+		return "My Name Is TsRANA and it is my 1st codepipeline ... Now using Jenkins.,,,";
 	}
 }
